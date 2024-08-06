@@ -9,6 +9,8 @@ for (let i = 0; i < numberOfDrumButtons; i++) {
         var buttonInnerHTML = this.innerHTML;
 
         makeSound(buttonInnerHTML);
+
+        buttonAnimation(buttonInnerHTML);
     });
 }
 
@@ -16,6 +18,8 @@ for (let i = 0; i < numberOfDrumButtons; i++) {
 //Detecting Keyboard Press on keyboard with pressing keyboard.
 document.addEventListener("keydown", function(event) {
     makeSound(event.key);
+
+    buttonAnimation(event.key);
 });
 
 
@@ -61,3 +65,16 @@ function makeSound(key) {
       }
 }
 
+
+function buttonAnimation(currentKey) {
+    var activeButton = document.querySelector("." + currentKey)
+
+    activeButton.classList.add("pressed"); //in css file .pressed 
+    //but the shadow didn't disappeared once it clicked. 
+    //setTimeout
+
+    setTimeout(function() {
+        activeButton.classList.remove("pressed");
+    },100); //100 means 1 second.
+
+}
