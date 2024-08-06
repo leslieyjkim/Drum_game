@@ -1,4 +1,4 @@
-[!Screenshot]()
+![Screenshot](https://raw.githubusercontent.com/leslieyjkim/Drum_game/49302dfdff697a082ce31dc1db372de104371e43/Mainpage.png)
 
 # Drum Kit 🥁
 
