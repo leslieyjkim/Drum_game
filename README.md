@@ -1,5 +1,8 @@
 ![Screenshot](https://raw.githubusercontent.com/leslieyjkim/Drum_game/49302dfdff697a082ce31dc1db372de104371e43/Mainpage.png)
 
+# Click here! 
+https://leslieyjkim.github.io/Drum_game/
+
 # Drum Kit 🥁
 
 Welcome to the Drum Kit application! This web application allows you to play drum sounds by clicking on drum buttons or by pressing the corresponding keys on your keyboard.
