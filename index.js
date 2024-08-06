@@ -1,9 +1,12 @@
-document.querySelector("button").addEventListener("click", function () {alert("I got clicked");}); 
-//Put anonymous function into the input. 
+const drumButtons = document.querySelectorAll(".drum");
+const numberOfDrumButtons = drumButtons.length;
 
-function handleClick() {
-    alert("I got clicked");
+for (let i = 0; i < numberOfDrumButtons; i++) {
+    drumButtons[i].addEventListener("click", function() {
+        alert("I got clicked");
+    });
 }
 
 
-// alert("test!"); //for test linked up properly in index.html
+
+
