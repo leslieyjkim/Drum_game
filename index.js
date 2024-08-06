@@ -1,3 +1,4 @@
+//Detecting Button Press on screen with mouse clicking. 
 const drumButtons = document.querySelectorAll(".drum");
 
 const numberOfDrumButtons = drumButtons.length;
@@ -7,19 +8,20 @@ for (let i = 0; i < numberOfDrumButtons; i++) {
 
         var buttonInnerHTML = this.innerHTML;
 
+        makeSound(buttonInnerHTML);
     });
 }
 
+
+//Detecting Keyboard Press on keyboard with pressing keyboard.
 document.addEventListener("keydown", function(event) {
- alert("Works!");
-
+    makeSound(event.key);
 });
-
 
 
 function makeSound(key) {
      
-    switch (buttonInnerHTML) {
+    switch (key) {
         case "w":
          var tom1 = new Audio('sounds/tom-1.mp3');
          tom1.play();
